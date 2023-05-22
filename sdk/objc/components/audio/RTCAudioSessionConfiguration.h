@@ -8,7 +8,9 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-/* neutune-test-2 */
+/* neutune-test-3
+ * set prefered number of channels to 2
+ */
 
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
