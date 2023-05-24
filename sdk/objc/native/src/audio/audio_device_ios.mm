@@ -1155,7 +1155,7 @@ int32_t AudioDeviceIOS::StereoRecording(bool& enabled) const {
 
 int32_t AudioDeviceIOS::StereoPlayoutIsAvailable(bool& available) {
   //available = false;
-  available = true
+  available = true;
   return 0;
 }
 
