@@ -8,9 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-/* neutune-test-4
+/* neutune-test-5
  * set prefered number of channels to 2
  * bypass channel check in audio_device_ios.mm
+ * naively set stereo enabled in audio_device_ios.mm
  */
 
 #import <AVFoundation/AVFoundation.h>
