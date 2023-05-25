@@ -8,8 +8,8 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-/* neutune-test-5
- * set prefered number of channels to 2
+/* neutune-test-6
+ * rolled back to use only 1 channel (for comparison)
  * bypass channel check in audio_device_ios.mm
  * naively set stereo enabled in audio_device_ios.mm
  */
