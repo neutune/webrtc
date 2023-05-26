@@ -22,7 +22,7 @@
 // audio unit. Hence, we will not hit a RTC_CHECK in
 // VerifyAudioParametersForActiveAudioSession() for a mismatch between the
 // preferred number of channels and the actual number of channels.
-const int kRTCAudioSessionPreferredNumberOfChannels = 1;
+const int kRTCAudioSessionPreferredNumberOfChannels = 2;
 
 // Preferred hardware sample rate (unit is in Hertz). The client sample rate
 // will be set to this value as well to avoid resampling the the audio unit's
@@ -97,7 +97,7 @@ static RTC_OBJC_TYPE(RTCAudioSessionConfiguration) *gWebRTCConfiguration = nil;
     // e.g. wired headset on iPhone 6.
     // TODO(henrika): add support for stereo if needed.
     _inputNumberOfChannels = kRTCAudioSessionPreferredNumberOfChannels;
-    _outputNumberOfChannels = kRTCAudioSessionPreferredNumberOfChannels;
+    _outputNumberOfChannels = 1; //kRTCAudioSessionPreferredNumberOfChannels;
   }
   return self;
 }

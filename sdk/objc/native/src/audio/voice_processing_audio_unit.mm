@@ -452,9 +452,9 @@ AudioStreamBasicDescription VoiceProcessingAudioUnit::GetFormat(
   format.mFormatID = kAudioFormatLinearPCM;
   format.mFormatFlags =
       kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked;
-  format.mBytesPerPacket = kBytesPerSample;
+  format.mBytesPerPacket = kRTCAudioSessionPreferredNumberOfChannels * kBytesPerSample;
   format.mFramesPerPacket = 1;  // uncompressed.
-  format.mBytesPerFrame = kBytesPerSample;
+  format.mBytesPerFrame = kRTCAudioSessionPreferredNumberOfChannels * kBytesPerSample;
   format.mChannelsPerFrame = kRTCAudioSessionPreferredNumberOfChannels;
   format.mBitsPerChannel = 8 * kBytesPerSample;
   return format;

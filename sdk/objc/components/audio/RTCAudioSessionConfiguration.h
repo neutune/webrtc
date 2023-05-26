@@ -8,8 +8,10 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-/* neutune-test-6
- * rolled back to use only 1 channel (for comparison)
+/* neutune-test-7
+ * use 2 channels for play
+ * use 1 channel for recordign
+ * fix audio data format to calculate the number of channels
  * bypass channel check in audio_device_ios.mm
  * naively set stereo enabled in audio_device_ios.mm
  */

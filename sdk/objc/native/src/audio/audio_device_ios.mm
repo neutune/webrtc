@@ -1154,20 +1154,20 @@ int32_t AudioDeviceIOS::StereoRecording(bool& enabled) const {
 }
 
 int32_t AudioDeviceIOS::StereoPlayoutIsAvailable(bool& available) {
-  available = false;
-  // available = true;
+  // available = false;
+  available = true;
   return 0;
 }
 
 int32_t AudioDeviceIOS::SetStereoPlayout(bool enable) {
-  // return 0;
+  return 0;
   RTC_LOG_F(LS_WARNING) << "Not implemented";
   return -1;
 }
 
 int32_t AudioDeviceIOS::StereoPlayout(bool& enabled) const {
-  // enabled = true;
-  enabled = false;
+  enabled = true;
+  // enabled = false;
   return 0;
 }
 
