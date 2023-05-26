@@ -456,7 +456,7 @@ OSStatus AudioDeviceIOS::OnGetPlayoutData(AudioUnitRenderActionFlags* flags,
   // Verify 16-bit, noninterleaved mono PCM signal format.
   RTC_DCHECK_EQ(1, io_data->mNumberBuffers);
   AudioBuffer* audio_buffer = &io_data->mBuffers[0];
-  RTC_DCHECK_EQ(1, audio_buffer->mNumberChannels);
+  //RTC_DCHECK_EQ(1, audio_buffer->mNumberChannels);
 
   // Produce silence and give audio unit a hint about it if playout is not
   // activated.

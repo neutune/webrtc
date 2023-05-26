@@ -8,15 +8,6 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-/* neutune-test-8
- * use 2 channels for play
- * use 1 channel for recordign
- * fix audio data format to calculate the number of channels
- * bypass channel check in audio_device_ios.mm
- * naively set stereo enabled in audio_device_ios.mm
- * removed play and record buffer size equal test
- */
-
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 
