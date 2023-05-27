@@ -96,8 +96,8 @@ static RTC_OBJC_TYPE(RTCAudioSessionConfiguration) *gWebRTCConfiguration = nil;
     // conversions in the audio unit. Some devices does only support stereo;
     // e.g. wired headset on iPhone 6.
     // TODO(henrika): add support for stereo if needed.
-    _inputNumberOfChannels = kRTCAudioSessionPreferredNumberOfChannels;
-    _outputNumberOfChannels = 1; //kRTCAudioSessionPreferredNumberOfChannels;
+    _inputNumberOfChannels = 1; //kRTCAudioSessionPreferredNumberOfChannels;
+    _outputNumberOfChannels = kRTCAudioSessionPreferredNumberOfChannels;
   }
   return self;
 }
