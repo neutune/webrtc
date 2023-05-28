@@ -302,8 +302,9 @@ int32_t AudioDeviceBuffer::RequestPlayoutData(size_t samples_per_channel) {
   // method.
   const size_t total_samples = play_channels_ * samples_per_channel;
   if (play_buffer_.size() != total_samples) {
-    play_buffer_.SetSize(total_samples);
     RTC_LOG(LS_INFO) << "Size of playout channels: " << play_channels_;
+    RTC_LOG(LS_INFO) << "Size of playout buffer: " << play_buffer_.size();
+    play_buffer_.SetSize(total_samples);
     RTC_LOG(LS_INFO) << "Size of playout buffer: " << play_buffer_.size();
   }
 

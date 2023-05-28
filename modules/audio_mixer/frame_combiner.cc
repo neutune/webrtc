@@ -197,6 +197,8 @@ void FrameCombiner::Combine(rtc::ArrayView<AudioFrame* const> mix_list,
       std::min(number_of_channels, kMaximumNumberOfChannels);
   const size_t output_samples_per_channel =
       std::min(samples_per_channel, kMaximumChannelSize);
+  RTC_LOG(LS_INFO) << "output_number_of_channels: " << output_number_of_channels;
+  RTC_LOG(LS_INFO) << "output_samples_per_channel: " << output_samples_per_channel;
 
   // Put float data in an AudioFrameView.
   std::array<float*, kMaximumNumberOfChannels> channel_pointers{};
